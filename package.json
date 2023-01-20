@@ -1,0 +1,55 @@
+{
+    "repository": "#",
+    "name": "project",
+    "version": "1.2.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --config ./bundler/webpack.prod.js",
+        "dev": "webpack serve --config ./bundler/webpack.dev.js",
+        "deploy": "gh-pages -d dist",
+        "clear": "rd /s /q dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+        "last 4 version"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.17.10",
+        "@babel/preset-env": "^7.17.10",
+        "autoprefixer": "^10.4.13",
+        "babel-loader": "^8.2.5",
+        "clean-webpack-plugin": "^4.0.0",
+        "copy-webpack-plugin": "^10.2.4",
+        "css-loader": "^6.7.2",
+        "css-minimizer-webpack-plugin": "^4.2.2",
+        "cssnano": "^5.1.14",
+        "file-loader": "^6.2.0",
+        "gh-pages": "^4.0.0",
+        "group-css-media-queries-loader": "^4.3.0",
+        "html-loader": "^3.1.0",
+        "html-webpack-plugin": "^5.5.0",
+        "image-webpack-loader": "^8.1.0",
+        "mini-css-extract-plugin": "^2.6.0",
+        "node-sass": "^8.0.0",
+        "portfinder-sync": "0.0.2",
+        "postcss": "^8.4.19",
+        "postcss-loader": "^7.0.2",
+        "postcss-preset-env": "^7.8.3",
+        "raw-loader": "^4.0.2",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.57.1",
+        "sass-loader": "^13.2.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.8.1",
+        "webpack-merge": "^5.8.0"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1",
+        "swiper": "^8.4.6"
+    }
+}
